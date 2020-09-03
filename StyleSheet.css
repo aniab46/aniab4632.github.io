@@ -1,0 +1,142 @@
+*{margin: 0 auto;padding: 0px;text-align: center;}
+
+.analogBG{background: #091921;min-height: 590px;text-align: center;align-items: center;}
+
+.clock{width: 350px;height: 350px;border-radius: 50%;background-image: url(images/clock.png) ;background-size: cover;position: relative;display: flex;justify-content: center;align-items: center; box-shadow: 
+            0 -15px 15px rgba(255, 255, 255,0.05),
+            inset 0 15px 15px rgba(255, 255, 255,0.05),
+            0 15px 15px rgba(0, 0, 0,0.3),
+            inset 0 15px 15px rgba(0, 0, 0,0.3),
+            inset 0 -5px 2px rgba(0, 0, 0,0.3);
+        border: 7px solid #091921;}
+.clock::before{content: '';position: absolute;width: 10px;height: 10px;border-radius: 50%;background: #d1d1d1;}
+
+.hour, .minute, .second{
+    position: absolute;
+}
+.hour , .hr{
+    width: 160px;
+    height: 160px;
+
+}
+.minute , .mn{
+    width: 190px;
+    height: 190px;
+
+}
+
+.second , .sc{ 
+    width: 230px;
+    height: 230px;
+
+}
+.hr, .mn, .sc {
+
+    display: flex;
+    justify-content: center;
+}
+.hr::before{
+    
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+    
+}
+.mn::before{
+    
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: #fff;
+    z-index: 11;
+}
+.sc::before{
+    
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 130px;
+    background-color: #ff105e;
+    z-index: 12;
+}
+
+.tAnalogBG{display: flex;justify-content:center;min-height: 500px;background: linear-gradient(135deg,#ff105e,rgb(77, 5, 49));align-items: center;}
+.tClock{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 7px solid #d1046b;
+    background: url(images/c1d5703f39eeddbdf4757404d01c713d.png);background-size: cover; position: relative;
+    box-shadow: 0 -15px 15px #20202013,
+                inset 0 -15px 15px #07000013, 
+                0 15px 15px #33011413,
+                inset 0 15px 15px #11010a13; 
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+}
+.tClock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #dfdfdfd0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.363);
+}
+
+.ghonta, .minit, .sekend{
+    position: absolute;
+
+    
+}
+
+.ghonta{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(0deg);
+    
+}
+.gh{
+    width: 8px;
+    height: 80px;
+    background-color: #54eb93;
+    border-radius: 5px 5px 0 0;
+    z-index: 10;
+}
+
+.minit{
+    width: 190px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(60deg);
+}
+.mi{
+    width: 5px;
+    height: 100px;
+    background-color: #f1de6f;
+    border-radius: 5px 5px 0 0;
+    z-index: 11;
+}
+.sekend{
+    width: 240px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+.sec{
+    width: 2px;
+    height: 150px;
+    background-color: #54eb93;
+    border-radius: 5px 5px 0 0;
+    z-index: 12;
+}
